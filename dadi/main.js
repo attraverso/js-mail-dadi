@@ -7,8 +7,8 @@ var giocatore2 = Math.ceil(Math.random() * 6);
 console.log('output pc', giocatore2);
 
 /*check player number*/
-if ( /*isNan(giocatore1) == true ||*/ giocatore1 < 0 || giocatore1 > 6) {
-  document.writeln('Il valore inserito non è valido');
+if (isNaN(giocatore1) == true || giocatore1 < 0 || giocatore1 > 6) {
+  console.log('Attenzione: il valore inserito non è valido');
 } else {
   /*determine winner*/
   if (giocatore1 > giocatore2) {
