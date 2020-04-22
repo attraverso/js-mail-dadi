@@ -7,14 +7,14 @@ var allowed_emails = [
   "mail005@mail.com",
 ]
 
-/*prompt user to give own addresses*/
+/*prompt user to give own address*/
 var userEmail = prompt('Il tuo indirizzo email');
 
-/*define test variable*/
+/*define match variable*/
 var email_match = false;
 
 /*check against allowed addresses*/
-for (var i = 0; i < allowed_emails.length && (email_match = false); i++) {
+for (var i = 0; i < allowed_emails.length && (email_match == false); i++) {
   if (userEmail == allowed_emails[i]) {
     email_match = true;
   }
