@@ -14,7 +14,7 @@ var userEmail = prompt('Il tuo indirizzo email');
 var email_match = false;
 
 /*check against allowed addresses*/
-for (var i = 0; i < allowed_emails.length; i++) {
+for (var i = 0; i < allowed_emails.length && (email_match = false); i++) {
   if (userEmail == allowed_emails[i]) {
     email_match = true;
   }

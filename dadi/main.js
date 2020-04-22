@@ -3,7 +3,7 @@ var giocatore1 = parseInt(prompt('scegli un numero da 1 a 6'));
 console.log('output g1', giocatore1);
 
 /*get random number btw 1-6 to play against*/
-var giocatore2 = Math.ceil(Math.random() * 6);
+var giocatore2 = Math.floor(Math.random() * 6) + 1;
 console.log('output pc', giocatore2);
 
 /*check player number*/
